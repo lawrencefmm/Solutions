@@ -5,7 +5,6 @@ typedef int_fast64_t ll;
 const ll mod = 998244353;
 const int alpha = 63;
 
-
 ll n, D[alpha][alpha][alpha][12], wr[alpha][alpha][12], ans;
 vector<int> pos;
 
@@ -59,7 +58,6 @@ int main()
 				{
 					for(int sz = 3; sz <= 10; sz++)
 					{
-                        //cout << a << " " << b << " " << c << " " << d << "\n";
 						D[a][b][c][sz] = (D[a][b][c][sz] + wr[d][a][sz] %mod* wr[d][b][sz]%mod * wr[d][c][sz]%mod) % mod;
 					}
 				}
