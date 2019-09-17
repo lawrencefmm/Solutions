@@ -49,7 +49,6 @@ int main()
 
 	readInput();
 
-
     for(int a = 0; a < alpha; a++)
 	{
 		for(int b = a; b < alpha; b++)
