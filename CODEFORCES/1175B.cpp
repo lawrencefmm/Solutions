@@ -22,7 +22,6 @@ int32_t main()
 		cin >> s;
 		if(s[0] == 'a')
 		{
-			//cout << (int)fores.size()  << " " << total << "\n";
 			if(flag)
 			{
 				cout << "OVERFLOW!!!\n";
@@ -64,7 +63,6 @@ int32_t main()
 		}
 		else
 		{
-			//cout << flag << " " << fores.size() << "\n";
 			if(flag) flag--;
 			else
 			{
@@ -75,5 +73,4 @@ int32_t main()
 	}
 
 	cout << x << "\n";
-	//cout << (x > maxn) << "\n";
 }
