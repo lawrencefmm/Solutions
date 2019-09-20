@@ -20,7 +20,6 @@ int main()
 
 	while(sz > 0)
 	{
-		//cout << sz << "\n";
 		cont++;
 		int best = 0, num = 0;
 

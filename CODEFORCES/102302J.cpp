@@ -26,7 +26,7 @@ inline bool witness(ll a, ll d, ll s, ll n)
 	ll x = power(a, d, n), y;
 
 	while (s--) {
-
+`
 		y = mul(x, x, n);
 
 		if (y == 1 and x != 1 and x != n-1) return false;
