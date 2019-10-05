@@ -78,35 +78,3 @@ int GetSize(int U)
 	U = find(U);
 	return w[U];
 }
-
-int main()
-{
-	//ios::sync_with_stdio(false), cin.tie(nullptr);
-
-	int n, q;
-	cin >> n >> q;
-
-	Init(n);
-
-	for(int i = 0; i < q; i++)
-	{
-		int op;
-		cin >> op;
-		if(op == 1)
-		{
-			int u, v;
-			cin >> u >> v;
-			AddEdge(u, v);
-		}
-		else if(op == 2)
-		{
-			RemoveLastEdge();
-		}
-		else
-		{
-			int u;
-			cin >> u;
-			cout << GetSize(u) << "\n";
-		}
-	}
-}
